@@ -131,6 +131,10 @@ Here's the permission and role list.
 
 I recommend using [Postman](https://postman.com) to import the postman collection `udacity-fsnd-final.postman_collection.json` located in the main repository folder to test each endpoint with the appropriate role. Each role is separated by folder and contains its respective JWT Token.
 
+To run tests on hosted API, change Postman `{{host}}` variable to:
+
+[https://udacity-fsnd-final.herokuapp.com/ ](https://udacity-fsnd-final.herokuapp.com/)
+
 #### Permissions
 - `get:actors`
 - `post:actors`
