@@ -1,6 +1,6 @@
 from flask import Flask, abort, jsonify, request
 from flask_cors import CORS
-from .database.models import setup_db, Actor, Movie
+from .database.models import setup_db, db_drop_and_create_all, Actor, Movie
 from .auth.auth0 import AuthError, requires_auth
 
 PAGINATE = 3
@@ -15,6 +15,11 @@ def create_app():
 
     app = Flask(__name__, instance_relative_config=True)
     setup_db(app)
+
+    # Remove and create new values for Movies and Actors
+    # If don't want to initialize database from zero, please comment the following line
+    db_drop_and_create_all()
+
     CORS(app, resources={r"*": {"origins": "*"}})
 
     @app.after_request
