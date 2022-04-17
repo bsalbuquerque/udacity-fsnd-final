@@ -8,7 +8,7 @@ I hope with this project to gather all the knowledge acquired during the course,
 The public URL preview can be accessed from the link below:
 
 [https://udacity-fsnd-final.herokuapp.com/ ](https://udacity-fsnd-final.herokuapp.com/)
->See API and RBAC section to navigate through endpoints with the necessary permissions
+>NOTE: See API and RBAC section to navigate through endpoints with the necessary permissions
 
 
 ## Getting started
@@ -134,6 +134,8 @@ I recommend using [Postman](https://postman.com) to import the postman collectio
 To run tests on hosted API, change Postman `{{host}}` variable to:
 
 [https://udacity-fsnd-final.herokuapp.com/ ](https://udacity-fsnd-final.herokuapp.com/)
+
+>NOTE: To test RBAC with POSTMAN, first POST one ACTOR and one MOVIE to perform successfully other endpoints.
 
 #### Permissions
 - `get:actors`
