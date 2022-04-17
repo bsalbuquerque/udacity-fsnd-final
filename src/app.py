@@ -317,5 +317,5 @@ def create_app():
 
         return response
 
-    return app
+    return app.run()
 
