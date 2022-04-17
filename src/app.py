@@ -319,15 +319,3 @@ def create_app():
 
     return app
 
-
-'''
-App variable to gunicorn
-
-'''
-
-app = create_app()
-
-if __name__ == '__main__':
-    app.run()
-
-
