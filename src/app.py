@@ -1,7 +1,7 @@
 from flask import Flask, abort, jsonify, request
 from flask_cors import CORS
-from database.models import setup_db, Actor, Movie
-from auth.auth0 import AuthError, requires_auth
+from .database.models import setup_db, Actor, Movie
+from .auth.auth0 import AuthError, requires_auth
 
 PAGINATE = 3
 
