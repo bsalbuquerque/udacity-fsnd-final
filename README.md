@@ -46,18 +46,18 @@ Once you have PostgreSQL installed, you will need to create the project database
 createdb fsnd
 ```
 
-To populate the database with the appropriate tables, you will use Flask Migrations to capture the models. In the terminal, go to the folder `/src` and run:
+To populate the database with the appropriate tables, you will use Flask Migrations to capture the models. In the `main` folder run:
 ```bash
-python3 -m flask db init
-python3 -m flask db migrate
-python3 -m flask db upgrade
+flask db init
+flask db migrate
+flask db upgrade
 ```
 
 
 ### 4. Running the server locally
-The final step is to run the application on your local machine. In the `/src` folder, run:
+The final step is to run the application on your local machine. In the `main` folder, run:
 ```bash
-python3 -m flask run
+flask run
 ```
 
 

@@ -5,6 +5,10 @@ from sqlalchemy import Column, Integer, String, ForeignKey, UniqueConstraint
 
 db = SQLAlchemy()
 db_path = os.environ['DATABASE_URL']
+
+if db_path.startswith("postgres://"):
+    db_path = db_path.replace("postgres://", "postgresql://", 1)
+
 migrate = Migrate()
 
 
