@@ -13,7 +13,7 @@ App creation
 
 def create_app():
 
-    app = Flask(__name__)
+    app = Flask(__name__, instance_relative_config=True)
     setup_db(app)
     CORS(app, resources={r"*": {"origins": "*"}})
 
